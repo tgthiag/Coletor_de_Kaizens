@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sga"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CADASTRO"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        style="@style/ContainerBlack"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/cad_container"
+        style="@style/ContainerBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fábrica:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_fabrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTr"
+            android:hint="Local em que trabalha (ex: Macedo):"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Nome completo:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTr"
+            android:hint="Digite seu nome completo"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="FRE: \n(Caso terceirizado, utilize o nome da empresa)"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_fre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTr"
+            android:hint="Exemplo: 17500011"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Setor:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_Setor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTr"
+            android:clickable="true"
+            android:editable="false"
+            android:hint="Setor em que você trabalha"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="*Utilize o nome completo sem abreviações.\n*Verifique as informações antes de confirmar."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:id="@+id/rdg1">
+        <RadioButton
+            android:id="@+id/rdgBtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colaborador"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rdgBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestor"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rdgBtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RH"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rdgBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEV"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        </RadioGroup>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_confirm"
+            style="@style/bt_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Confirmar"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Desenvolvido por: Thiago Carvalho"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

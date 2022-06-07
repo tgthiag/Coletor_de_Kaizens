@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49343586553",
+    "project_id": "sga-kaizen",
+    "storage_bucket": "sga-kaizen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49343586553:android:db55225058fde09f450228",
+        "android_client_info": {
+          "package_name": "com.tgapps.sgakaizen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49343586553-f8cn280ip4da78eqaaarkp62ej1p4929.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACmQbTn-Qvr2t9X6fsm-lk3O_BgwqRNbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49343586553-f8cn280ip4da78eqaaarkp62ej1p4929.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
