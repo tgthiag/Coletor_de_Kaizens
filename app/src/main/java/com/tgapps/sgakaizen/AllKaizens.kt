@@ -32,11 +32,6 @@ class AllKaizens : AppCompatActivity() {
 
         var fireDb = FirebaseDatabase.getInstance()
         fireRef = fireDb.reference
-//        fireRef.child("ideias").child("2022-04").get().addOnSuccessListener {
-//            Log.i("firebase", "Got value ${it.value}")
-//        }.addOnFailureListener{
-//            Log.e("firebase", "Error getting data", it)
-//        }
 
         recycler = binding.container2
         recycler.layoutManager = LinearLayoutManager(this)

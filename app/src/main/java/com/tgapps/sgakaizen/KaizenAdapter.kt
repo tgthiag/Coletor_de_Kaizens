@@ -85,9 +85,9 @@ class KaizenAdapter(var ctx: Context,var dadosFire : ArrayList<KaizenData>,var e
         }
         }
         if (holder.aprovada.text.toString() == "Sim" && holder.implementada.text.toString() == "Sim"){
-            view.setBackgroundColor(ContextCompat.getColor(ctx,R.color.greenTr))
+            view.setBackgroundResource(R.drawable.container_green)
         }else if (holder.aprovada.text.toString() == "Não" && holder.implementada.text.toString() == "Não"){
-            view.setBackgroundColor(ContextCompat.getColor(ctx,R.color.red_tr))
+            view.setBackgroundResource(R.drawable.container_red)
         }
 
     }
